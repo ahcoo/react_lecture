@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>몇 번이나 클릭 됐나</span>
+    <button id = "btn">Click me</button>
+</body>
+
+<script>
+    let counter = 0;
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+    const handleClick = () => {
+        counter += 1;
+        span.innerText = `몇 번이나 클릭 됐나요? ${counter}번`;
+    };
+    button.addEventListener("click", handleClick);
+</script>
+
+
+
+</html>
